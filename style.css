@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Alike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Alike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Alice&family=Alike&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #e9f5db, #fbe8cc);
+    line-height: 1.6;
+    height: 100%;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+ 
+    position: fixed;
+    z-index: 99;
+    background-color: #ffffff15;
+    backdrop-filter: blur(50px);
+    padding: 15px;
+    padding-top: 25px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 87%;
+    margin-left: 20%;
+}
+
+.nav-links {
+    float: left;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #141010;
+    font-size: 21px;
+    font-family: "Alike", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav-links .dot {
+    font-size: 1.5rem;
+    color: #62B614;
+}
+
+.menu-icon{
+    float: left;
+    margin-right: 2%;
+}
+.menu-icon img{
+    width: 87%;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    padding-top: 3%;
+}   
+
+.hero-text {
+    max-width: 50%;
+    margin-left: 8%;
+}
+
+.hero-text h1 {
+    font-size: 72px;
+    font-family: "Alike", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 20px;
+    font-family: "Alike", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 8%;
+}
+
+.app-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.app-store, .play-store {
+    background-color: #345318;
+    color: rgba(255, 255, 255, 0.5);
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: "Alata", serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+.app-store:hover, .play-store:hover {
+    background-color: #56a048;
+}
+
+.footer-text {
+    font-size: 0.8rem;
+    color: #777;
+    text-align: center;
+    transform: translateY(-450%);
+}
+
+/* Hero Image */
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    /* Add your specific styling for the image */
+    transform: translateY(-5%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 1.5rem;
+        color: #333;
+        cursor: pointer;
+    }
+}
+
