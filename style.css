@@ -11,12 +11,25 @@
 
 body {
     font-family: 'Arial', sans-serif;
+    /* background: linear-gradient(to bottom right, #e0f5d4, #ffd9a8, #eecab5, #afdfb6); */
     background: linear-gradient(to bottom right, #e9f5db, #fbe8cc);
     min-height: 100vh; /* Ensure body covers full viewport */
     display: flex;
     flex-direction: column;
+    animation: rotateGradient 10s linear infinite;
+    background-size: 200% 200%; /* Make gradient span larger for smooth animation */
 }
-
+@keyframes rotateGradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
 /* Navbar */
 .navbar {
     display: flex;
