@@ -11,7 +11,6 @@
 body {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(to bottom right, #e9f5db, #fbe8cc);
-    line-height: 1.6;
     height: 100%;
 }
 
@@ -62,6 +61,12 @@ body {
 .nav-links .dot {
     font-size: 1.5rem;
     color: #62B614;
+}
+
+.nav-links a:hover{
+    color: #169A82;
+    border-bottom: 2px solid #F8A736;
+    border-radius: 2px;
 }
 
 .menu-icon{
@@ -122,7 +127,7 @@ body {
     cursor: pointer;
     font-size: 1rem;
     font-family: "Alata", serif;
-    font-weight: 400;
+    font-weight: 200;
     font-style: normal; 
     display: flex;
     flex-direction: row;
@@ -141,6 +146,17 @@ body {
     margin-left: 8px;
     white-space: nowrap;
 }
+#playstoreLogo{
+    transform: translateY(3px);
+}
+
+.Store-name{
+    font-size: 1.3em;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    white-space: nowrap;
+}
+
 .app-store:hover, .play-store:hover {
     background-color: #56a048;
 }
