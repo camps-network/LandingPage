@@ -11,8 +11,8 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    /* background: linear-gradient(to bottom right, #e0f5d4, #ffd9a8, #eecab5, #afdfb6); */
-    background: linear-gradient(to bottom right, #e9f5db, #fbe8cc);
+    background: linear-gradient(to bottom right, #e0f5d4, #f0dabf, #e0f5d4, #fbe8cc);
+    /* background: linear-gradient(to bottom right, #baf8f3, #fbe8cc); */
     min-height: 100vh; /* Ensure body covers full viewport */
     display: flex;
     flex-direction: column;
@@ -139,7 +139,7 @@ body {
     border: none;
     width: 100%;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 12px;
     cursor: pointer;
     font-size: 1rem;
     font-family: "Alata", serif;
@@ -174,7 +174,7 @@ body {
 }
 
 .app-store:hover, .play-store:hover {
-    background-color: #56a048;
+    background-color: #233a1f;
 }
 
 .footer-text {
