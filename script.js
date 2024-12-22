@@ -13,4 +13,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setActiveLink(); // Run on page load
     window.addEventListener("scroll", setActiveLink); // Update on scroll
+
+
+    const newsletterSection = document.querySelector(".newsletter-section");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    newsletterSection.classList.add("animate");
+                }
+            });
+        },
+        { threshold: 0.5 } // Trigger when 50% of the section is visible
+    );
+
+    observer.observe(newsletterSection);
+
 });

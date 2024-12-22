@@ -21,6 +21,7 @@ body {
     animation: rotateGradient 10s linear infinite;
     background-size: 200% 200%; /* Make gradient span larger for smooth animation */
 }
+
 @keyframes rotateGradient {
     0% {
         background-position: 0% 0%;
@@ -225,7 +226,14 @@ body {
     align-items: center;
     justify-content: start;
     margin-left: 8%;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 
+}
+.newsletter-section.animate {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .newsletter-content {
