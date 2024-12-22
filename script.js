@@ -30,16 +30,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     observer.observe(newsletterSection);
 });
-import { config } from 'dotenv';
-config();
+
 const noting = {
-    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-    appId: process.env.REACT_APP_FIREBASE_APP_ID,
-    measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
+    apiKey: "AIzaSyAdFj1Er5PYvWUhFmkPs9VVz3X858KS1xI",
+    authDomain: "camps-landing-page.firebaseapp.com",
+    projectId: "camps-landing-page",
+    storageBucket: "camps-landing-page.firebasestorage.app",
+    messagingSenderId: "7236998092",
+    appId: "1:7236998092:web:847d34528c7f6b17ccc369",
+    measurementId: "G-9RB0JWZF06"
   };
 
   const app = firebase.initializeApp(noting);
