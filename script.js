@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll(".nav-links a");
+    const appButtons = document.querySelectorAll(".app-buttons .app-store");
+    const newsletterSection = document.querySelector(".newsletter-section");
 
     const setActiveLink = () => {
         let index = sections.length;
@@ -14,9 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
     setActiveLink(); // Run on page load
     window.addEventListener("scroll", setActiveLink); // Update on scroll
 
-
-    const newsletterSection = document.querySelector(".newsletter-section");
-
     const observer = new IntersectionObserver(
         (entries) => {
             entries.forEach((entry) => {
@@ -29,6 +28,13 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     observer.observe(newsletterSection);
+
+    // Add event listeners for App Store and Play Store buttons
+    appButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            newsletterSection.scrollIntoView({ behavior: "smooth" });
+        });
+    });
 });
 
 const noting = {
@@ -44,6 +50,7 @@ const noting = {
   const app = firebase.initializeApp(noting);
   const analytics = firebase.analytics(app);
   const db = firebase.firestore();
+
 document.querySelector('.newsletter-form').addEventListener('submit', async (e) => {
     e.preventDefault(); // Prevent the default form submission
 
