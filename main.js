@@ -59,7 +59,7 @@ document.querySelector('#app').innerHTML = `
         </div>
     </section>
     <footer class="footer">
-        <p>Copyright © 2024 by<strong>&nbsp;Camps.</strong>&nbsp;&nbsp;All rights reserved. <span class="country">India</span></p>
+        <p>Copyright © 2025 by<strong>&nbsp;Camps.</strong>&nbsp;&nbsp;All rights reserved. <span class="country">India</span></p>
     </footer>
 `
 
