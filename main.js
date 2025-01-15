@@ -3,9 +3,9 @@ document.querySelector('#app').innerHTML = `
  <header class="navbar">
         <div class="logo"><img src="src/logo.png" alt="camps-logo-pic"></div>
         <nav class="nav-links">
-            <a href="">Home.</a>
+            <a href="#home-section">Home.</a>
             <span class="dot">•</span>
-            <a href="">Newsletter.</a>
+            <a href="#newsletter-section">Newsletter.</a>
             <!-- <span class="dot">•</span>
             <a href="#">FAQ.</a>
             <span class="dot">•</span>
