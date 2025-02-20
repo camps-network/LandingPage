@@ -3,7 +3,7 @@ document.querySelector('#app').innerHTML = `
  <header class="navbar">
         <div class="logo"><img src="src/logo.png" alt="camps-logo-pic"></div>
         <nav class="nav-links">
-            <a href="#home-section">Home.</a>
+            <a href="#hero-section">Home.</a>
             <span class="dot">•</span>
             <a href="#newsletter-section">Newsletter.</a>
             <!-- <span class="dot">•</span>
